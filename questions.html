@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://nextui.netlify.app/nextui.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://nextui.netlify.app/docs.js"></script>
+</head>
+<body>
+    <header>
+        <div class="heading-container d-grid">
+            <h1 class="header-title letter-spacing-2 fs-700">NextQuiz</h1>
+            <nav>
+              <ul id="primary-navigation" data-visible="false" class="primary-navigation uppercase letter-spacing-4" role="list">
+                <li><a href="#"><span aria-hidden="true">Highscores</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Create Quiz</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Profile</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Sign Up</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Login</span></a></li>
+              </ul>
+            </nav>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+              aria-expanded="false">Menu</span></button>
+        </div>
+      </header>
+      <main class="main-container letter-spacing-4">
+                <div class="d-flex">
+                    <button class="btn btn-goback letter-spacing-2">Back</button>
+                    <button class="btn btn-next letter-spacing-2 margin-l-auto">Next</button>
+                </div>
+
+                <section class="section-container letter-spacing-4">
+                    <div class="d-flex quiz-buttons">
+                        <p class="quiz-score bg-dark text-white">Score: 1</p>
+                        <p class="quiz-question-no bg-dark text-white">Question: 1 / 5</p>
+                    </div>
+                    <div class="quiz-question d-flex">
+                            <div class="question-container">
+                                <h3 class="question fs-500">Guess the movie from the emoji ? </h3>
+                                <img src="./images/emoji.jpg" alt="emoji" class="question-1-image">
+                            </div>
+                            <div class="quiz-options d-grid margin-l-auto">
+                                <h3 class="answer-options fs-500">Answers:</h3>
+                                <p>Jingle All the way</p>
+                                <p>Home Alone</p>
+                                <p>Kung Fu Panda</p>
+                                <p>Frozen</p>
+                            </div>
+               
+                    </div>
+                </section>           
+      </main>
+</body>
+</html>
