@@ -1,0 +1,138 @@
+section {
+  margin-bottom: 2rem;
+}
+
+.heading-container {
+  display: grid;
+  padding: 1rem 2rem;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas: "header-title nav";
+}
+
+.header-title {
+  grid-area: header-title;
+}
+
+nav {
+  grid-area: nav;
+  margin-left: auto;
+}
+
+@media (max-width: 60em) {
+  .heading-container {
+    display: flex;
+  }
+  .mobile-nav-toggle {
+    margin-left: auto;
+  }
+}
+
+.primary-navigation {
+  display: flex;
+  gap: 2em;
+}
+
+.primary-navigation a {
+  color: hsl(var(--clr-dark));
+}
+
+@media (max-width: 60em) {
+  .primary-navigation a {
+    color: hsl(var(--clr-white));
+  }
+}
+
+.main-container {
+  padding: 5rem;
+}
+
+.section-container {
+  max-width: 80rem;
+  margin-inline: auto;
+}
+
+.featured-quizes > *,
+.category-quizes > * {
+  display: grid;
+}
+
+.bg-image {
+  background-position: right top;
+  object-fit: cover;
+  aspect-ratio: 1.5/1;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+
+.bg-image-space {
+  background-image: url(images/space.jpg);
+}
+
+.bg-image-roads {
+  background-image: url(images/roads.jpg);
+}
+
+.bg-image-mountains {
+  background-image: url(images/mountains.jpg);
+}
+
+.bg-image-wildlife {
+  background-image: url(images/wildlife.jpg);
+}
+
+.bg-image-beach {
+  background-image: url(images/beach.jpg);
+}
+
+.bg-image-food {
+  background-image: url(images/food.jpg);
+}
+
+.bg-image-art {
+  background-image: url(images/art.jpg);
+}
+
+.bg-image-world {
+  background-image: url(images/world.jpg);
+}
+
+.bg-image-biology {
+  background-image: url(images/biology.jpg);
+}
+
+.quiz-name,
+.category-name {
+  padding: 1rem;
+  width: 100%;
+  display: block;
+}
+
+.category-name:hover {
+  background: hsl(var(--clr-white) / 0.3);
+}
+
+.quiz-name:hover {
+  background: hsl(var(--clr-dark) / 0.6);
+  cursor: pointer;
+}
+
+.category-quizzes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.125rem;
+}
+
+.category-quizzes > * {
+  width: 100%;
+  height: 60vh;
+  aspect-ratio: 1;
+}
+
+@media (max-width: 60em) {
+  .category-quizzes {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+  .category-quizzes > * {
+    height: 30vh;
+  }
+}
