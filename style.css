@@ -161,8 +161,10 @@ nav {
 }
 
 .quiz-question-no,
+.end-game,
 .quiz-results,
-.quiz-score {
+.quiz-score,
+.timer {
   width: fit-content;
   margin: 1rem;
   padding: 0.5rem 1rem;
@@ -237,6 +239,10 @@ nav {
   background: hsl(var(--clr-red));
 }
 
+.end-game:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 60em) {
   .quiz-question {
     flex-direction: column;
@@ -249,6 +255,8 @@ nav {
     flex-direction: column;
   }
   .quiz-score,
+  .timer,
+  .end-game,
   .quiz-question-no {
     margin: 1rem 0;
   }

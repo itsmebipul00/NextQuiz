@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://nextui.netlify.app/nextui.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <script defer src="https://nextui.netlify.app/docs.js"></script>
+</head>
+<body>
+    <header>
+        <div class="heading-container d-grid">
+            <h1 class="header-title letter-spacing-2 fs-700">NextQuiz</h1>
+            <nav>
+              <ul id="primary-navigation" data-visible="false" class="primary-navigation uppercase letter-spacing-4" role="list">
+                <li><a href="#"><span aria-hidden="true">Highscores</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Create Quiz</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Profile</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Sign Up</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Login</span></a></li>
+              </ul>
+            </nav>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+              aria-expanded="false">Menu</span></button>
+        </div>
+      </header>
+      <main class="main-container">
+        <form class="form-login fs-400 letter-spacing-3">
+                    
+            <label for="username" class="username">Username<span class="text-red">*</span></label>
+            
+            <input id="username" class="form-username" type="text" required>
+    
+            <label for="password" class="password">Password<span class="text-red">*</span><span class="form__tooltip" data-tooltip="Minimum 8 characters"></span></label>
+
+            <div class="p-relative">
+                <input id="password" class="form-password" type="password" minlength="8" required>
+                <i class="fas fa-eye p-absolute"></i>
+            </div>
+
+            <div class="d-flex fs-300">
+                <span>
+                    <input type="checkbox" id="remember-me" class="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </span>
+    
+                <a href="#" class="forgot-password">Forgot Password ?</a>
+            </div>
+
+            <button class="btn btn-signUp uppercase letter-spacing-1">Login</button>
+            <p class="already-done">Yet to Register? <a href="./signup.html">Login</a></p>
+
+        </form>
+      </main>
+</body>
+</html>
